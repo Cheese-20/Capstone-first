@@ -1,25 +1,23 @@
-import { Box } from "@mui/material";
-import './podcast.css';
+import {  Card, CardMedia, CardContent, Typography } from "@mui/material";
+import "./podcast.css";
 
-
-export default function PodcastTemp(Props) {
-
-    // const scroll = {
-    //     container: {
-    //       overflowX: 'auto',
-    //       whiteSpace: 'nowrap',
-    //     },
-    //   };
-
-    
-
-
-//TODO : Horizontally display items 
-
+// *Podcast card
+export default function PodcastBlock(data) {
   return (
-    <Box className='Pod-picture' >
-      <img src={Props.pic} />
-   </Box>
-    
+    <>
+      <Card className="Podcast-Card" sx={{m:0.5}}>
+      <CardMedia
+        component="img"
+        className="pod-image"
+        image={data.pic}
+        alt={data.title}
+      />
+      <CardContent>
+        <Typography variant="subtitle2" component="div" sx={{display:'flex',pr:1}} style={{}}>
+          {data.title}
+        </Typography>
+      </CardContent>
+    </Card>
+    </>
   );
 }

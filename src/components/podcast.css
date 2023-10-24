@@ -1,11 +1,23 @@
-.hide-scrollbar::-webkit-scrollbar {
+.pod-data::-webkit-scrollbar {
     display: none;
   }
 
-.Pod-picture {
+  .pod-image{
+    width : 150px;
+    height: 150px;
+    padding-right: 25px;
+  }
+
+  /* .pod-image img {
    width :100px;
    height:100px;
-   display: flex;
-   flex-direction: row;
+} */
+
+.Podcast-Card{
+  display: flex;
+  justify-content: space-evenly;
+  width: 250px;
+  flex-shrink: 0;
+  
 }
 

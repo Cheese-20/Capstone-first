@@ -1,10 +1,10 @@
 import PodData from '/src/Api/calls'
 import PodcastCard from '/src/components/PodcastCard.jsx'
-import {UseState} from 'react'
+import {useState} from 'react'
 
 
 function ViewShows (){
-    const [VisibleShows , setVisibleShows] = UseState(5) ;
+    const [VisibleShows , setVisibleShows] = useState(5) ;
 
     const AddMore = () => {
         setVisibleShows(VisibleShows + 8)

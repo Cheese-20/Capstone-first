@@ -9,7 +9,7 @@ import ViewShows from "/src/components/ViewShows.jsx"
 
   for(let i=0; i<=10;i++){
     const random = Math.floor(Math.random() * showArray.length)
-   TrendingArray.push(showArray[random])
+    TrendingArray.push(showArray[random])
    console.log(random)
   }
 
@@ -17,13 +17,14 @@ function Home() {
   return (
     <>
     <Typography sx={{m:1}}>Trending</Typography>
+    
     <Box sx={{ display:'flex',overflowX: 'auto'}} className="pod-data">
-     {TrendingArray.map((item) =>{<PodcastBlock 
+     {TrendingArray.map((item) =><PodcastBlock 
      key={item.id}
      pic={item.image} 
      title={item.title}
      description={item.description}
-     />})}
+     />)}
      </Box>
 
   {/**  ARRAY That should have clicked*/}
@@ -31,7 +32,7 @@ function Home() {
      {/* <PodcastBlock /> */}
 
      <Typography sx={{m:1}}>All Shows</Typography>
-      <Box>
+      <Box sx={{display:'flex',overflowX: 'auto'}}>
           <ViewShows />
       </Box>
     </>

@@ -34,7 +34,9 @@ function Home() {
      {/* <PodcastBlock /> */}
 
      <Typography sx={{m:1}}>All Shows</Typography>
+      <Box>
 
+      </Box>
     </>
   );
 }

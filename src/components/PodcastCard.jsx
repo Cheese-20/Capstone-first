@@ -13,7 +13,7 @@ export default function PodcastBlock(data) {
         alt={data.title}
       />
       <CardContent>
-        <Typography variant="subtitle2" component="div" sx={{display:'flex',pr:1}} style={{}}>
+        <Typography variant="subtitle2" component="div" sx={{display:'flex',pr:0.2}}>
           {data.title}
         </Typography>
       </CardContent>

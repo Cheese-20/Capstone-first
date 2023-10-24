@@ -1,6 +1,7 @@
 import {Typography,Box } from "@mui/material";
 import showArray from '/src/Api/calls'
 import PodcastBlock from "/src/components/PodcastCard.jsx"
+import ViewShows from "/src/components/ViewShows.jsx"
 
   // random trending list 
 
@@ -13,20 +14,16 @@ import PodcastBlock from "/src/components/PodcastCard.jsx"
   }
 
 function Home() {
-
-
-//todo display name and date 
   return (
     <>
     <Typography sx={{m:1}}>Trending</Typography>
     <Box sx={{ display:'flex',overflowX: 'auto'}} className="pod-data">
-     {TrendingArray.map((item) =><PodcastBlock 
+     {TrendingArray.map((item) =>{<PodcastBlock 
      key={item.id}
      pic={item.image} 
      title={item.title}
      description={item.description}
-     sx={{pr:2}}
-     />)}
+     />})}
      </Box>
 
   {/**  ARRAY That should have clicked*/}
@@ -35,7 +32,7 @@ function Home() {
 
      <Typography sx={{m:1}}>All Shows</Typography>
       <Box>
-
+          <ViewShows />
       </Box>
     </>
   );

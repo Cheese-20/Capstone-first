@@ -1,4 +1,4 @@
-import PodData from '/src/Api/calls'
+import PodData from '/src/components/Data/Api'
 import PodcastCard from '/src/components/PodcastCard.jsx'
 import {useState} from 'react'
 

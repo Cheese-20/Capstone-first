@@ -1,7 +1,8 @@
 import { Typography, Box } from "@mui/material";
-import showArray from "/src/Api/calls";
+import showArray from "/src/components/Data/Api";
 import PodcastBlock from "/src/components/PodcastCard.jsx";
 import ViewShows from "/src/components/ViewShows.jsx";
+
 
 // random trending list
 

@@ -1,5 +1,6 @@
 import {  Card, CardMedia, CardContent, Typography } from "@mui/material";
 import "./podcast.css";
+import  returnDate  from "../Functions/BasicFx.js";
 
 // *Podcast card
 export default function PodcastBlock(data) {
@@ -17,8 +18,12 @@ export default function PodcastBlock(data) {
           {data.title}
         </Typography>
 
-        <Typography variant="subtitle2" component="div" sx={{display:'flex',pr:0.2}}>
-          {data.season}
+        <Typography variant="subtitle3" component="div" sx={{display:'flex',pr:0.2}}>
+          Seasons: {data.season}
+        </Typography>
+
+        <Typography variant="subtitle3" component="div" sx={{display:'flex',pr:0.2}}>
+          Last edited: {returnDate(data.update)}
         </Typography>
       </CardContent>
     </Card>

@@ -19,19 +19,20 @@ function Home() {
       <Typography sx={{ m: 1 }}>Trending</Typography>
 
       <Box sx={{ display: "flex", overflowX: "auto" }} className="pod-data">
-        {TrendingArray.map((item) => (
-           <PodcastBlock
+        {TrendingArray.map((item) => {
+          return (<PodcastBlock
             key={item.id}
             pic={item.image}
             title={item.title}
             season={item.seasons}
-          />
-        ))}
+            update={item.updated}
+          />);
+        })}
       </Box>
 
       {/**  ARRAY That should have clicked*/}
       <Typography sx={{ m: 1 }}>Recently played</Typography>
-      {/* <PodcastBlock /> */}
+      <PodcastBlock />
 
       <Typography sx={{ m: 1 }}>All Shows</Typography>
 

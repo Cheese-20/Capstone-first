@@ -20,6 +20,7 @@ function ViewShows (){
                     pic={showData.image} 
                     title={showData.title}
                     description={showData.description}
+                    season={showData.seasons}
                     />
             )
         })}

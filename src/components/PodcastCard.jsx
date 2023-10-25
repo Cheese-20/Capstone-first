@@ -16,6 +16,10 @@ export default function PodcastBlock(data) {
         <Typography variant="subtitle2" component="div" sx={{display:'flex',pr:0.2}}>
           {data.title}
         </Typography>
+
+        <Typography variant="subtitle2" component="div" sx={{display:'flex',pr:0.2}}>
+          {data.season}
+        </Typography>
       </CardContent>
     </Card>
     </>

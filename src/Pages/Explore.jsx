@@ -1,6 +1,7 @@
-import React from "react";
-
-
-export default function exp () {
-  return <h1 style={{ marginTop: "25vh" }}>All Favorites</h1>;
+export default function dom(){
+  return(
+    <div>
+      <h1>hi</h1>
+      </div>
+  )
 }

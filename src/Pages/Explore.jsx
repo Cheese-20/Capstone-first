@@ -1,11 +1,17 @@
- function Explore(){
+ import Search from "/src/components/Explore/SearchBar";
+ import ViewShows from "/src/components/ViewShows.jsx";
+ import {  Typography } from "@mui/material";
+
+
+ function ExploreData(){
   return(
     <>
-    <div>
-      <h1>hi</h1>
-      </div>
+      <Search />
+      
+      <Typography>All shows:</Typography>
+      <ViewShows />
     </>
   )
 }
 
-export default Explore
+export default ExploreData

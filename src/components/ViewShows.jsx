@@ -4,7 +4,7 @@ import {useState} from 'react'
 
 
 function ViewShows (){
-    const [VisibleShows , setVisibleShows] = useState(5) ;
+    const [VisibleShows , setVisibleShows] = useState(25) ;
 
     const AddMore = () => {
         setVisibleShows(VisibleShows + 8)

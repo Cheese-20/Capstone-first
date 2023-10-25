@@ -5,6 +5,7 @@ import Explore from "../Pages/Explore.jsx";
 import Profile from "../Pages/Profile.jsx";
 import Home from "../Pages/Home.jsx";
 
+
 export default function NavigationBar() {
   const [onTab, setOnTab] = React.useState(0);
 
@@ -29,13 +30,11 @@ export default function NavigationBar() {
           </Link>
         </Tabs>
       </nav>
-     
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Explore" element={<Explore />} />
-          <Route path="/Profile" element={<Profile />} />
-        </Routes>{" "}
-     
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Explore" element={<Explore />} />
+        <Route path="/Profile" element={<Profile />} />
+      </Routes>
     </BrowserRouter>
   );
 }

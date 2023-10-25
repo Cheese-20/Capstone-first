@@ -4,7 +4,7 @@ const returnDate = (date) =>{
     const Month = result.getMonth();
     const Year = result.getFullYear(); 
 
-    return (`${Day}/ ${Month}/${Year}}`)
+    return (`${Day}/ ${Month}/${Year}`)
  };
 
 export default returnDate

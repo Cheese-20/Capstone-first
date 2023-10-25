@@ -21,6 +21,7 @@ function ViewShows (){
                     title={showData.title}
                     description={showData.description}
                     season={showData.seasons}
+                    update={showData.updated}
                     />
             )
         })}
